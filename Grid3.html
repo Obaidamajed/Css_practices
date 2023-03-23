@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container{
+    display: grid;
+    grid-auto-rows: minmax(100px,auto);
+    grid-template-areas: 
+    "head head head head head"
+    /* هيك عملت صف و5 عواميد, "" هاي الاشارة يعني صف */
+    "sl sl nav nav nav"
+    "sl sl cont cont cont"
+    "sl sl cont cont cont"
+    "sl sl cont cont cont"
+    "foot foot foot foot foot";
+    grid-gap: 10px;
+
+
+}
+
+.box{
+    background: #aaa;
+    color: #fff ;
+    text-align:center;
+}
+
+.head{
+    grid-area: head;
+    /* الاسم اللي كاتبو هون هو اللي رح أستدعيه فوق
+    في القريد تيمبليت ارياز
+    بتقدر تسمي الاسم اللي بدك اياه لكن المهم 
+    بس تستدعيه فوق تستدعيه بنفس الاسم اللي سميتو هون
+    بالقريد اريا */
+}
+.nav{
+    grid-area: nav;
+}
+.sideleft{
+    grid-area: sl;
+}
+.content{
+    grid-area: cont;
+    display: grid;
+    /* كتبت ديسبلاي قريد لأنو بدي أكتب
+    بداخل الكونتين وبهاي الحالة الكونتينت
+    صار أب للي بدي أكتبو بداخلو لهيك كتبت ديسبلاي
+    قريد */
+    grid-template-columns: repeat(2,1fr) ;
+    grid-gap: 10px;
+}
+.footer{
+    grid-area: foot;
+}
+p{
+    display: grid;
+    background-color: gray;
+}
+    </style>
+</head>
+<body>
+    
+<div class="container">
+    <div class="box head">head</div>
+    <div class="box nav">nav</div>
+    <div class="box sideleft">sideleft</div>
+    <div class="box content">
+        
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    
+    </div>
+    <!-- هيك عملت قريد بداخل قريد 
+    عملت قريد بداخل محتوى الكونتينت, حذفت كلمة كونتينت 
+    ووضعت بدالها عدة فقرات
+    بإمكاني أعمل قريد بداخل قريد وكل قريد 
+    بقدر أعمل بداخلها قريد -->
+    <div class="box footer">footer</div>
+</div>
+
+</body>
+</html>

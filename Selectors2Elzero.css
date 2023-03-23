@@ -1,0 +1,35 @@
+/*
+  CSS Selectors
+  - Element + Other Element => [div + p]
+  - Element ~ Other Elements => [p ~ div]
+  - [Attribute]
+  - Element[Attribute]
+  - [Attribute=Value]
+  - Element[Attribute=Value] => input[type="submit"]
+  - [Attribute~=Value] => Contains A Word
+  - [Attribute*=Value] => Contains A Atring
+  - [Attribute^=Value] => Start With A String
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+div + p{
+  /* بندور على ديف بعديه مباشرة باراقراف */
+}
+p ~ div{
+  /* بدي كل الديفات اللي بعد الباراقراف لكن بشرط يكونو اخوان للباراقراف يعني كلهم من نفس الأب */
+}
+[title]{
+  /* كل العناصر اللي الها اتربيوت اسمو تايتل */
+}
+div[title]{
+  /* بدي ديف يكون الو اتربيوت اسمو تايتل */
+}
+div[title=s01]{
+
+}

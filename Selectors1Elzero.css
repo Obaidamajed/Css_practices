@@ -1,0 +1,52 @@
+/*
+  CSS Selectors
+  - *
+  - Element => [p, div, h2]
+  - Element OtherElement => div p .. all p inside div
+  - .class-name
+  - #id-name
+  - .parent .child
+  - .class-one.class-two
+  - .class-name div, .class-name p
+  - Element.class-name => p.class-name
+  - .parent > .child => Direct Child
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+div p {
+  /* احتمال يكون في عنصر بينهم  */
+}
+.class-name{
+
+}
+.parent .child{
+
+}
+.class-one.class-two{
+/* i search about element has two classes
+pay attention: there is no space between them  */
+}
+.class-name div,
+.class-name p {
+
+}
+p.class-name{
+  /* بدي العنصر مثلا الباراقراف اللي بداخلها هذا الكلاس */
+}
+.class-name{
+  /* بدي اي عنصر بحتوي على هذا الكلاس */
+}
+
+.parent .child{
+  color: red;
+}
+.parent > .child{
+  color: blue;
+  /* لازم يكون ابن مباشر*/
+}

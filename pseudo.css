@@ -1,0 +1,45 @@
+a {
+    color: red;
+    text-decoration: none;
+}
+a:hover{
+    color: green;
+    /* hover بتخلي الماوس لما يوقف على قوقل 
+    او يوتيوب او كورة يتحول ل لون اخضر */
+}
+a :visited {
+    color: blue;
+}
+.check:checked{
+    opacity: 0.5;
+    /* لما اضغط عالمربع بصير لونو شفاف
+    الدرجات من 0-1 */
+}
+.text:focus{
+outline: none;
+/* الخط الغامق اللي بصير على اطار مربع 
+التكست لما اكبس عليه حيبطل يطلع عندي */
+border: 2px green solid;
+/* تأثير البوردر هذا بصير لما اكبس كليك على 
+مربع التكست */
+}
+p::first-letter{
+    color: red;
+    font-size: 20px;
+}
+p::first-line{
+    color: blue;
+}
+p::selection{
+    background: red;
+    color: white;
+    /* لما اعمل تحديد للفقرة بتصير الخلفية تبعة
+    التحديد باللون الاحمر والكلام المحددو باللون الابيض */
+}
+::selection{
+    /* بهاي الطريقة بتحكم بكل الصفحة
+    لكن لازم احذف السيليكشن اللي عملتها
+    الخاصة بالفقرة لأنو اذا ضلت حيضل تأثيرها  */
+    background: green;
+    color: blueviolet;
+}

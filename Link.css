@@ -1,0 +1,23 @@
+a {
+   text-decoration: none ; 
+   /* text-decoration بتحكم بالخط اللي تحت كلمة تيست */
+   /* line-through,under-line,over-line, some options of 
+   text-decoration  */
+   color: red ;
+    cursor:grab;
+    /* cursor بتحكم بشكل الماوس لما يوقف على 
+    كلمة التيست  */
+    /* default,auto,grab, some of options cursor */
+
+}
+
+a:hover{
+    color: blue;
+/* hover بتخلي الماوس لما يوقف على كلمة
+تيست يتغير لونو للون الازرق */
+    font-size: 20px;
+    /* hover بتخلي الماوس لما يوقف على كلمة
+    تيست يكبر حجم الكلمة ل 20بكسل */
+    /* ما ننسى انو الحجم الافتراضي للكلام بكون 16بكسل */
+    
+}

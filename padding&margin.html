@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>course css</title>
+</head>
+<style>
+    .name {
+    border: 5px black solid;
+
+    padding-left: 10px;
+    /* padding بتعمل ازاحة داخليةبداخل الديف */
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding: 10px;
+    /* when i write only padding i say it:
+    make offset from all direction 
+    ( top right bottom left ) */
+    padding: 10px 20px 30px 10px;
+    /* make padding: 
+    top:10px right:20px bottom:30px left:10px */
+    padding: 10px 5px;
+    /* make padding:
+    top&bottom:10px right&left:5px */
+    /* margin-top: 40px; */
+    /* margin بتعمل ازاحة خارجية  */
+    /* margin-left: 30px; */
+    /* margin takes negative value,
+    padding don't takes negative value  */
+
+    width: 300px;
+    /* margin-left: 25%;
+    margin-right: 25%; */
+    /* margin-right بامكاني احذفها ويطلع عندي نفس النتيجة */
+    /* width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto; */
+    /* مهما كانت عندي قيمة العرض, بهاي الطريقة
+    بعمل الي ازاحة من اليمين واليسار بحيث 
+    يكون عندي الديف بنص الصفحة */
+        outline: 5px crimson solid;
+        border-radius: 20px;
+}
+
+/* *{
+    padding: 0;
+    margin: 0;
+    في مواقع بتكون ماخدة مارجين تلقائي
+    لذلك عملت هاي الحركة حتى ما يكون ماخذ
+    عندي مارجين او بادينق
+} */
+/* حاليا الودث تبع الديف هو 320 
+300 من الودث 
+و5 من الضلع الأيمن للبوردر و5 من الضلع 
+الأيسر للبوردر 
+و5 من بادنق يمين و5 من بادنق يسار 
+مجموعهم 320 
+يعني البادنق والبوردر بصيرو من العنصر نفسو
+ أما الأوت لاين مو من الديف */
+ /* outline ما بتقدر تكتب كل ستايل ضلع لحال 
+ زي ما بتقدر تعمل بالبوردر مثلاً
+ وهذا عيب في الأوت لاين */
+</style>
+<body>
+    
+<div class="name">
+    obaida
+</div>
+
+</body>
+</html>

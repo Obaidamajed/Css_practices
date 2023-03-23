@@ -1,0 +1,9 @@
+/* اول اشي بحدد العنصر اللي بدي أعدل عليه */
+/* external method */
+p {
+    color: blue;
+    font-size:50px
+}
+h1 {
+    color: red;
+}

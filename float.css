@@ -1,0 +1,35 @@
+.container {
+    background: green;
+    /* هون ما استجاب لأنو الفلوت بتخرج
+    الديف خارج إطار العمل يعني كأنو 
+    مافي أي إشي داخل الكونتاينر*/
+    /* height: 50px; */
+    /* هسا الكونتاينر صار الو أبعاد 
+    لكن هذا مو حل لأني بلزم نفسي
+    بطول معين*/
+
+}
+/* .container div {
+    float: left;
+    float: left; makes elements on one line from 
+    left direction
+    width: 25%;
+    i added width to keep them away from 
+    each other
+    every div will take 25% from page width size
+} */
+/* .container div {
+    display: inline-block;
+    width: 25%;
+     العنصر الرابع نزل على الخط التاني لأنو
+    بال إن لاين بلوك بكون في عندي هامش بين كل 
+    ديف والثانية وهاي تعتبر مشكلة 
+} */
+.container div {
+    float: left;
+
+}
+.x {
+    clear: both;
+    /* both بتحل المشكلة من اليمين واليسار */
+}

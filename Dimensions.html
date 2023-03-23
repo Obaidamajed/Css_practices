@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: red;
+            padding: 10px;
+            display: inline-block;
+            min-width: 400px;
+            /* min-width=400px يعني أقل عرض حيكون
+            400بكسل وادا كان حجم الكلام عندي اكبر 
+            من 400بكسل حيكبر الديف على قد حجم الكلام */
+            /* max-width=400px يعني الديف ما رح يكبر عن 
+            400 بكسل حتى لو صار حجم الكلام اكبر من 
+            400 بكسل.
+            ونفس الكلام بنطبق عالهايت */
+        }
+        p{
+            background-color: green;
+            padding: 10px;
+            width: fit-content;
+            /* هذا الخيار بجعل الودث على قد الكونتينت
+            اللي في العنصر  */
+        }
+        
+    </style>
+</head>
+<body>
+    <div>osama mohammed</div>
+    <hr style="border: 10px solid black ;" color="red">
+    <div>osama mohammed ahmed</div>
+    <hr>
+    <div>osama mohammed ahmed sayed</div>
+    <p>obaida</p>
+    <hr>
+    <p>obaida majed</p>
+    <hr>
+    <p>obaida majed salah</p>
+</body>
+</html>

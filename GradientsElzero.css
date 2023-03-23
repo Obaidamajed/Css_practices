@@ -1,0 +1,43 @@
+/*
+  Gradients
+  linear-gradient(Direction || Angle, Color Stop 1, Color Stop 2, ....)
+*/
+
+div {
+  width: 400px;
+  height: 200px;
+  background-color: #eee;
+  margin: 20px auto;
+  position: relative;
+  padding: 10px;
+}
+div:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  background-color: red;
+  height: 10px;
+  background-image: linear-gradient(
+    to right,
+    #2980b9 20%,
+    /* end color #2980b9 */
+    #27ae60 20%,
+    /* start color #27ae60 */
+    #27ae60 40%,
+     /* end color #27ae60 */
+    #d35400 40%,
+    /* start color #d35400 */
+    #d35400 60%,
+    /* end color #d35400 */
+    #8e44ad 60%,
+    /* start color #8e44ad */
+    #8e44ad 80%,
+    /* end color #8e44ad */
+    #c0392b 80%
+    /* start color #c0392b */
+    /* end color of #c0392b is 100% */
+
+  );
+}

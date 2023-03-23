@@ -1,0 +1,60 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+/* * بتحددلي كل العناصر */
+.cont{
+
+}
+
+.all{
+    display: inline-block;
+    width: 40%;
+    background-color: red;
+    text-align: center;
+    /* align-items: center; */
+}
+
+@media  screen and (max-width:700px){
+    /* بيجو ك بلوك في حال كانت الشاشة
+    اقل من 700بكسل 
+    لكن اذا كبرت الشاشة بطبق ال إن لاين بلوك */
+    .all{
+        display: block;
+        width: 100%;
+    }
+    body{
+        /* حددت الباكقراوند اسود في حال كانت الشاشة
+        صغيرة  زي شاشة التلفون مثلا */
+        background: #000;
+    }
+}
+.A .B {
+    
+}
+@media screen and (min-width:701px) and
+                    (max-width:900px) {
+    body{
+        background: #00f;
+    }
+    .all{
+        display: inline-block;
+        width: 100%;
+    }
+
+    
+    /* هيك الشاشة من 0بكسل ل 700 بكسل بكون الخلفية
+    تبعها اسود
+    ومن 701 الى 900 بتكون ازرق وبعد هيك بتكون ابيض */
+
+}
+@media screen and (min-width:901px)  {
+    body{ 
+        background: green;
+    }
+    .all{
+        display: inline-block;
+        width: 100%;
+    }
+    
+}

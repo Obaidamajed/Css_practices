@@ -1,0 +1,16 @@
+.x {
+    height: 100px;
+    width: 100px;
+    background: orange;
+
+    border-width: 10px;
+    border-color: red;
+    border-style: double;
+
+    border: 5px blue solid;
+    /* بقدر اكتب ال3 سطور بسطر واحد للاختصار  */
+    border: black 8px solid ;
+    /* مو ضروري تكتبهم بترتيب معيَن */
+    /* طبعا بقرأ عندي آخر سطر كتبتو لذلك قرأ
+     عندي سطر اللون الاسود */
+}

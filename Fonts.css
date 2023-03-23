@@ -1,0 +1,41 @@
+div{
+    color: red;
+}
+
+h1 {
+    color: green;
+}
+
+div h1 {
+    color: blue;
+    color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+}
+/* Font-weight is controlled with width of font  */
+/* the default of h1 font is 32px */
+/* مو كل المتصفحات بتدعم كل الخطوط
+ لذلك بختار اكتر من خط (الافضل) */
+/* h1 بقدر اناديه بطريقتين   */
+/* لا ننسى انو الامر اللي بنكتب في السطر الاخير
+هو اللي بطغى  */
+
+.p {
+    color: blueviolet;
+    font-size: 20px;
+    line-height: 10px;
+    letter-spacing: 10px;
+}
+/* letter-spacing is controlled for the space between the letters */
+/* line-height is controlled for the space between lines */
+/* the default of p font is 16px */
+
+#p1 {
+    text-align: right;
+    direction: rtl;
+}
+/* text-align is controlled for the location of words */
+/* direction is controlled for the direction of words
+direction it makes the direction of writing 
+from right to left or opposite as i want  */

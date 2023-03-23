@@ -1,0 +1,28 @@
+/*
+  CSS Selectors
+  - :first-child
+  - :last-child
+  - :first-of-type
+  - :last-of-type
+  - :only-child
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+p:first-child{
+  /* بدي البرقراف اللي بكون الابن الاول */
+}
+p:first-of-type{
+  /* بدي اول برقراف من كل اب  */
+}
+p:only-child{
+  /* بدور عالبرقراف اللي بكون الابن الوحيد */
+}
+p:only-of-type{
+/* بدور عالبرقراف الوحيد بأي أب */
+}

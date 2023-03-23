@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>course css</title>
+    <style>
+        .test1 {
+width: 60px;
+background-color: red;
+position: fixed;
+bottom: 0px;
+/* default for position is static */
+/* realtive position بمكنك من انك تستخدم
+ التوب والليفت والرايت والبوتوم */
+ /* relative position مرجع الحركة الخاصة فيه
+ هي مكانو للعنصر اللي بشتغل عليه(عندي هون هو تست1)
+وأيضاً لما يتحرك بضل مكانو فاضي إلو */
+/* absolute position بتخرج العنصر خارج إطار العمل
+او بمعنى آخر بتجعل العنصر فوق إطار العمل
+يعني باقي العناصر بتتصرف كأنو التيست 1 غير موجود
+وعلى هالأساس بتترتب بالصفحة */
+/* absolute position العنصر المحطوط فيه بوزيشين ابسوليوت حيتحرك
+بناءاً على الأب الخاص فيه 
+وبحالتنا هاي الأب الخاص فيه هو (الصفحة) البودي
+لكن في شرط لازم يكون في الأب:
+هو إنو لازم يكون البوزيشين تبع الأب ريلاتيف 
+بهاي الحالة عندي الأب هو تيست3 مو البودي 
+لذلك لازم أخلي البوزيشين تبع تيست3 هو ريلاتيف*/
+/* اذا ما كان البوزيشين ريلاتيف للتيست3 
+حيتحرك تيست1 بناءاً على الصفحة */
+/* fixed المرجع تبعو هو الصفحة */
+}
+
+.test2 {
+width: 60px;
+background-color: blue;
+}
+
+.test3 {
+    width: 200px;
+    height: 1000px;
+    border: 5px #000 solid;
+    position: relative;
+}
+.testtttt {
+    width: 60px;
+    background-color: rgb(0, 255, 60);
+    position: sticky;
+    bottom: 0;
+    /* position sticky بتخلي التيستتتتت ثابتة براس
+    الصفحة وانا بنزل بالسكرول
+    او اذا بدي بخليها ثابتة اسفل الصفحة وانا 
+    طالع بالسكرول 
+    الفرق عن الفيكسيد إنو الفيكسيد دائما
+    بتكون براس الصفحة لكن الستيكي
+    بتكون بوضعها الطبيعي وبس انزل بالصفحة عن 
+    طريق السكرول بتثبت براس الصفحة*/
+}
+.test {
+    width: 60px;
+    background-color: blueviolet;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="test3">
+
+       <div class="test1">test1</div>
+       <!-- هسا صار الأب تبع التيست1 هو التيست3 -->
+ 
+    </div>
+<div class="test2">test2</div>
+
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="testtttt">testtttt</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+<div class="test">test</div>
+
+</body>
+</html>

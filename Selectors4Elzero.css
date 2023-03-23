@@ -1,0 +1,40 @@
+/*
+  CSS Selectors
+  - :not(Selectors)
+  - :nth-child(n)
+  - :nth-last-child(n)
+  - :nth-of-type(n)
+  - :nth-last-of-type(n)
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+p:not(:first-child){
+  /* هيك بقلو كل البرقراف ما عدا البرقراف الابن الاول */
+}
+p:not(.special){
+  /* كل البرقراف ما عدا العنصر اللي فيه كلاس اسمو سبيشال */
+}
+p:nth-child(2){
+  /* بدور ع برقراف يكون الابن الثاني  */
+}
+p:nth-child(odd){
+
+}
+p:nth-child(even){
+
+}
+p:nth-last-child(2){
+  /* بدي البرقراف يكون الابن الثاني لكن من الأخير  */
+}
+p:nth-of-type(3){
+  /* بدور عالبرقراف الثالث */
+}
+div:nth-last-of-type(1){
+  /* اول ديف من الاخير */
+}

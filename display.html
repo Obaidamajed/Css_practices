@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="display.css">
+    <title>course css</title>
+    <style>
+        div {
+    background-color: red;
+    margin: 10px;
+    width: 200px;
+    height: 20px;
+    padding: 10px;
+    display: inline-block;
+}
+span {
+    background-color: blue;
+    width: 200px;
+    height: 20px;
+    /* هون لما اعطي عرض او طول للسبان ما بتأثر إشي 
+    لأنو عنصر إن لاين, ما بوخذ إلا على قد الكلام
+    أما في الديف اذا أعطيتو عرض او طول معين بوخذو
+    لأنو عنصر بلوك بوخذ كل عرض الصفحة  */
+    padding: 10px;
+    /* لما نعمل بادنق لعناصر ال إن لاين ما بتعمل بادنق
+    للتوب والبوتوم بشكل حقيقي لذلك من الافضل نخلي
+    قيمة التوب والبوتوم 0 حتى ما يصير مشاكل */
+    margin: 10px;
+    /* لما نعمل بادنق ومارجن لعناصر ال إن لاين بكونو 
+    لليسار واليمين فقط */
+    display:inline-block ;
+    /* block element: 
+    take full width if no width 
+    add line break 
+    respect padding,margin,width,height */
+
+    /* inline element:
+    do not add line break
+    do not respect width,height
+    respect padding&margin [just left&right] */
+/* 
+    inline-block element:
+    Allow elements before&after it
+    Respect padding, margin, width, height  */
+
+
+}
+    </style>
+</head>
+<body>
+    
+<div>test1</div>
+<div>test2</div>
+<div>test3</div>
+<span>test1</span>
+<span>test2</span>
+<span>test3</span>
+<!-- div عنصر بلوك -->
+<!-- span عنصر إن لاين -->
+
+</body>
+</html>

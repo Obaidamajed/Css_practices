@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid_columns</title>
+    <style>
+        
+        .container{
+display: grid;
+/* بدون هاي الخطوة ما رح تعرف تعمل اي اشي ع نظام القريد  */
+grid-template-columns:repeat(4,1fr);
+/* repeat(2,200px)يعني عندي عامودين كل عامود 
+قياسو 200بكسل */
+/* repeat(6,1fr) يعني عندي 6 اعمدة كلهم نفس الحجم */
+/* 1fr 1fr بحكيلو خلي العامودين قد بعض وخليهم يملو المتصفح */
+/* 1fr 1fr 1fr خلي ال3 اعمدة قد بعض ويملو الصفحة */
+/* 2fr 1fr 1fr حيكون اول عامود بكبر العامود 
+الثاني والثالث مع بعض */
+/*grid-template-columns هذا الخيار حتى اتحكم بالعواميد */
+grid-auto-rows: minmax(200px,auto);
+/* minmax 200px في حال ان المحتوى اقل من 200بكسل */
+/* minmax auto في حال ان المحتوى اكبر من 200 بكسل
+إكبر على قد حجم المحتوى */
+/* in grid auto rows minmax انا بقلو خلي 200 بكسل ولكن 
+في حالة ان المحتوى اللي بداخلك اكبر من 200بكسل
+إكبَر بحجم المحتوى واذا ما كان بداخلك محتوى
+اكبر من 200بكسل ساعتها خليك على ال200بكسل */
+/* grid-template-rows هذا الخيار حتى اتحكم بالصفوف */
+/* 200px 200px 200px بخليلي كل صف حجمو 200بكسل */
+/* 200px 200px بخليلي اول صفين 200 بكسل والصف الثالث
+ما بعمل فيه اشي */
+/* 200px 200px 200px 200px 200px بعمل الي 5صفوف
+حتى لو ما كان عندي 10 ديفات,بعمل 5صفوف ببينو عالإنسبكت */
+/* grid-column-gap: 10px;
+بعمل قاب بين العواميد */
+/* grid-row-gap: 30px;
+بعمل قاب بين الصفوف */
+grid-gap: 10px;
+/* بعمل قاب للصفوف والاعمدة, في حال حطيت قيمتين بتكون
+اول قيمة هي الصف والقيمة الثانية هي العامود */
+/* في حال حطيت قيمة وحدة بعمل قاب للصف والعامود بنفس القيمة */
+
+}
+.box {
+    background: rgb(96, 96, 207);
+    text-align: center ;
+    /* انا لحد الان ما اشتغلت بنظام القريد
+    فقط بنسق الديفات اللي عندي عشان ابدا اشتغل 
+    بعد هيك عليهم */
+}
+.box1{
+    /* grid-column-start: 1;
+    grid-column-end: 5; */
+    grid-column: 2/3;
+}
+.box2{
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    grid-column: 3/5;
+    grid-row: 4/5;
+}
+.box3{
+    grid-row: 1/5;
+}
+    </style>
+</head>
+<body>
+    
+<div class="container">
+<!-- لازم الديفات اللي انا حشتغل عليها بنظام القريد
+ تكون داخل كونتينر لأني حتحكم بالكونتينر  -->
+<div class="box box1">1</div>
+<div class="box box2">2</div>
+<div class="box box3">3</div>
+<div class="box box4">4</div>
+<div class="box box5">5</div>
+<div class="box box6">6</div>
+<div class="box box7">7</div>
+<div class="box box8">8</div>
+<div class="box box9">9</div>
+<div class="box box10">10</div>
+<div class="box box11">11</div>
+<div class="box box12">12</div>
+</div>
+<!-- clas box حتى اتحكم بالعناصر كلهم مرة وحدة -->
+<!-- class box1,2,3,4,5,6 حتى اتحكم بكل عنصر على حدا -->
+</body>
+</html>

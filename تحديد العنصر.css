@@ -1,0 +1,26 @@
+.test2 {
+    color: red;
+}
+/* Selector {
+    property: Value;
+    propertyTwo: Value
+    Selector ممكن يكون كلاس او أي دي او
+    اسم العنصر نفسو
+} */
+
+/* . = class  when i write . it means i called class */
+
+#test3 {
+    color: aqua;
+}
+/* # = id when i write # it means i called id  */
+p {
+    color: blueviolet;
+}
+div p{
+    color:orange;
+}
+/* when i write div then space then p 
+here i tell it that there is a paragraph 
+inside the div  */
+
